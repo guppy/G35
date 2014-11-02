@@ -12,6 +12,9 @@
 #define INCLUDE_G35_ORBITER_H
 
 #include "G35.h"
+#include "math.h"
+
+#define PI 3.1415926535
 
 // An Orbiter doesn't know about string length. Its coordinate system is
 // [0.0, 1.0], and it's the caller's job to scale that to real-world

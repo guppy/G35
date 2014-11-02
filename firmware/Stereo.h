@@ -12,6 +12,7 @@
 #define INCLUDE_G35_PROGRAMS_STEREO_H
 
 #include "LightProgram.h"
+#include "math.h"
 
 // Stereo was inspired by SparkFun's "FAKE MUSIC!" demo for their
 // Bargraph Breakout board. Thanks, guys!
