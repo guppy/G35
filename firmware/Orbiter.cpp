@@ -9,6 +9,9 @@
 */
 
 #include "Orbiter.h"
+#include "math.h"
+
+#define PI 3.1415926535
 
 Orbiter::Orbiter()
   : radius_((float)rand() / (float)RAND_MAX),
