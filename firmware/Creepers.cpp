@@ -8,7 +8,7 @@
   See README for complete attributions.
 */
 
-#include <Creepers.h>
+#include "Creepers.h"
 
 Creepers::Creepers(G35& g35) : LightProgram(g35), count_(0), next_worm_(0) {
   g35_.fill_color(0, light_count_, 255, COLOR_BLACK);
