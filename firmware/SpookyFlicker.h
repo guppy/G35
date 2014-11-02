@@ -11,7 +11,7 @@
 #ifndef INCLUDE_G35_PROGRAMS_SPOOKY_FLICKER_H
 #define INCLUDE_G35_PROGRAMS_SPOOKY_FLICKER_H
 
-#include <LightProgram.h>
+#include "LightProgram.h"
 
 class SpookyFlicker : public LightProgram {
  public:

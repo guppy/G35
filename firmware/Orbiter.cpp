@@ -8,7 +8,7 @@
   See README for complete attributions.
 */
 
-#include <Orbiter.h>
+#include "Orbiter.h"
 
 Orbiter::Orbiter()
   : radius_((float)rand() / (float)RAND_MAX),

@@ -11,8 +11,8 @@
 #ifndef INCLUDE_G35_PROGRAMS_CYLON_H
 #define INCLUDE_G35_PROGRAMS_CYLON_H
 
-#include <LightProgram.h>
-#include <Orbiter.h>
+#include "LightProgram.h"
+#include "Orbiter.h"
 
 class Cylon : public LightProgram {
  public:

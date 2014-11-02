@@ -8,7 +8,7 @@
   See README for complete attributions.
 */
 
-#include <Pulse.h>
+#include "Pulse.h"
 
 Pulse::Pulse(G35& g35)
   : LightProgram(g35),

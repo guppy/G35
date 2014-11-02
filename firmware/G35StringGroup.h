@@ -10,7 +10,7 @@
 #ifndef INCLUDE_G35_STRING_GROUP_H
 #define INCLUDE_G35_STRING_GROUP_H
 
-#include <G35.h>
+#include "G35.h"
 
 // A G35StringGroup takes a set of G35 instances and presents them as a single
 // virtual light string of arbitrary length.

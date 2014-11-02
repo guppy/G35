@@ -11,8 +11,8 @@
 #ifndef INCLUDE_G35_PROGRAMS_INCHWORM_H
 #define INCLUDE_G35_PROGRAMS_INCHWORM_H
 
-#include <LightProgram.h>
-#include <Worm.h>
+#include "LightProgram.h"
+#include "Worm.h"
 
 class Inchworm : public LightProgram {
  public:

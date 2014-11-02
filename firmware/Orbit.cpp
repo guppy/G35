@@ -8,7 +8,7 @@
   See README for complete attributions.
 */
 
-#include <Orbit.h>
+#include "Orbit.h"
 
 Orbit::Orbit(G35& g35)
   : LightProgram(g35),

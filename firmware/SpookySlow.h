@@ -11,7 +11,7 @@
 #ifndef INCLUDE_G35_PROGRAMS_SPOOKY_SLOW_H
 #define INCLUDE_G35_PROGRAMS_SPOOKY_SLOW_H
 
-#include <LightProgram.h>
+#include "LightProgram.h"
 
 class SpookySlow : public LightProgram {
  public:

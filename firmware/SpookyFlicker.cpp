@@ -8,7 +8,7 @@
   See README for complete attributions.
 */
 
-#include <SpookyFlicker.h>
+#include "SpookyFlicker.h"
 
 SpookyFlicker::SpookyFlicker(G35& g35) : LightProgram(g35) {
   intensities_ = static_cast<uint8_t*>(malloc(light_count_ * sizeof(uint8_t)));

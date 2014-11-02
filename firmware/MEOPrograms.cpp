@@ -9,7 +9,7 @@
   See README for complete attributions.
 */
 
-#include <MEOPrograms.h>
+#include "MEOPrograms.h"
 
 LightProgram* MEOProgramGroup::CreateProgram(G35& lights,
                                              uint8_t program_index) {

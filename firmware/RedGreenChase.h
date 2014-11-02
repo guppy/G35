@@ -11,7 +11,7 @@
 #ifndef INCLUDE_G35_PROGRAMS_RED_GREEN_CHASE_H
 #define INCLUDE_G35_PROGRAMS_RED_GREEN_CHASE_H
 
-#include <LightProgram.h>
+#include "LightProgram.h"
 
 class RedGreenChase : public LightProgram {
  public:

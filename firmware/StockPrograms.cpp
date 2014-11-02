@@ -8,7 +8,7 @@
   See README for complete attributions.
 */
 
-#include <StockPrograms.h>
+#include "StockPrograms.h"
 
 SteadyWhite::SteadyWhite(G35& g35)
   : LightProgram(g35), intensity_(0) {

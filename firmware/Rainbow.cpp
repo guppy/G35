@@ -10,7 +10,7 @@
   See README for complete attributions.
 */
 
-#include <Rainbow.h>
+#include "Rainbow.h"
 
 #define PATTERN_COUNT (8)
 Rainbow::Rainbow(G35& g35)

@@ -10,7 +10,7 @@
 #ifndef INCLUDE_G35_STRING_H
 #define INCLUDE_G35_STRING_H
 
-#include <G35.h>
+#include "G35.h"
 
 // A G35String knows how to talk to a real GE Color Effects light string.
 // In particular, it implements the set_color() method of the G35 interface.

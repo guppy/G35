@@ -12,12 +12,12 @@
 #ifndef INCLUDE_G35_MEO_PROGRAMS_H
 #define INCLUDE_G35_MEO_PROGRAMS_H
 
-#include <LightProgram.h>
+#include "LightProgram.h"
 /* #include <Chasing.h> */
 /* #include <ColorPhasing.h> */
 /* #include <Dither.h> */
 /* #include <Oscillate.h> */
- #include <Rainbow.h> 
+ #include "Rainbow.h"
 /* #include <RandomStrobe.h> */
 /* #include <SimplexNoise.h> */
 /* #include <SineWave.h> */

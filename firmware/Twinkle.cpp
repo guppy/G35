@@ -8,7 +8,7 @@
   See README for complete attributions.
 */
 
-#include <Twinkle.h>
+#include "Twinkle.h"
 
 Twinkle::Twinkle(G35& g35) : LightProgram(g35) {
   g35_.fill_random_max(0, light_count_, G35::MAX_INTENSITY);

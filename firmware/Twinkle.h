@@ -11,7 +11,7 @@
 #ifndef INCLUDE_G35_PROGRAMS_TWINKLE_H
 #define INCLUDE_G35_PROGRAMS_TWINKLE_H
 
-#include <LightProgram.h>
+#include "LightProgram.h"
 
 class Twinkle : public LightProgram {
  public:

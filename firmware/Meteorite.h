@@ -11,7 +11,7 @@
 #ifndef INCLUDE_G35_PROGRAMS_METEORITE_H
 #define INCLUDE_G35_PROGRAMS_METEORITE_H
 
-#include <LightProgram.h>
+#include "LightProgram.h"
 
 class Meteorite : public LightProgram {
  public:

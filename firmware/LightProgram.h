@@ -11,7 +11,7 @@
 #ifndef INCLUDE_G35_LIGHT_PROGRAMS_H
 #define INCLUDE_G35_LIGHT_PROGRAMS_H
 
-#include <G35.h>
+#include "G35.h"
 
 // Interface for light programs.
 //

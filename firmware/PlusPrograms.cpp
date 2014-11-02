@@ -8,7 +8,7 @@
   See README for complete attributions.
 */
 
-#include <PlusPrograms.h>
+#include "PlusPrograms.h"
 
 LightProgram* PlusProgramGroup::CreateProgram(G35& lights,
                                               uint8_t program_index) {

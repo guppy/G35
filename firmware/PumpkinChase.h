@@ -11,7 +11,7 @@
 #ifndef INCLUDE_G35_PROGRAMS_PUMPKIN_CHASE_H
 #define INCLUDE_G35_PROGRAMS_PUMPKIN_CHASE_H
 
-#include <LightProgram.h>
+#include "LightProgram.h"
 
 class PumpkinChase : public LightProgram {
  public:

@@ -8,7 +8,7 @@
   See README for complete attributions.
 */
 
-#include <Meteorite.h>
+#include "Meteorite.h"
 
 Meteorite::Meteorite(G35& g35)
   : LightProgram(g35),

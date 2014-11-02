@@ -8,7 +8,7 @@
   See README for complete attributions.
 */
 
-#include <SpookySlow.h>
+#include "SpookySlow.h"
 
 SpookySlow::SpookySlow(G35& g35) : LightProgram(g35), remaining_(0) {
 }

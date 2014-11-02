@@ -8,7 +8,7 @@
   See README for complete attributions.
 */
 
-#include <PumpkinChase.h>
+#include "PumpkinChase.h"
 
 PumpkinChase::PumpkinChase(G35& g35)
   : LightProgram(g35),

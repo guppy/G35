@@ -8,7 +8,7 @@
   See README for complete attributions.
 */
 
-#include <Cylon.h>
+#include "Cylon.h"
 
 Cylon::Cylon(G35& g35) : LightProgram(g35), orbiter_(0.5, 0.01), last_x_(0) {}
 

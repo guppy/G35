@@ -8,7 +8,7 @@
   See README for complete attributions.
 */
 
-#include <Stereo.h>
+#include "Stereo.h"
 
 Stereo::Stereo(G35& g35) : LightProgram(g35),
                            light_count_(g35_.get_light_count()),

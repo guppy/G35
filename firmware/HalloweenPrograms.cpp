@@ -8,7 +8,7 @@
   See README for complete attributions.
 */
 
-#include <HalloweenPrograms.h>
+#include "HalloweenPrograms.h"
 
 LightProgram* HalloweenProgramGroup::CreateProgram(G35& lights,
                                                    uint8_t program_index) {

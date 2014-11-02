@@ -8,7 +8,7 @@
   See README for complete attributions.
 */
 
-#include <RedGreenChase.h>
+#include "RedGreenChase.h"
 
 RedGreenChase::RedGreenChase(G35& g35)
   : LightProgram(g35),

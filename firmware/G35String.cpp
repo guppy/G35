@@ -11,7 +11,7 @@
   loop protocol code that seems to work very well!
 */
 
-#include <G35String.h>
+#include "G35String.h"
 
 #define MHZ_16 (1)  // standard Arduino/Teensy
 

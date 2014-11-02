@@ -11,12 +11,12 @@
 #ifndef INCLUDE_G35_HALLOWEEN_PROGRAMS_H
 #define INCLUDE_G35_HALLOWEEN_PROGRAMS_H
 
-#include <Creepers.h>
-#include <SpookyFlicker.h>
-#include <Eyes.h>
-#include <LightProgram.h>
-#include <PumpkinChase.h>
-#include <SpookySlow.h>
+#include "Creepers.h"
+#include "SpookyFlicker.h"
+#include "Eyes.h"
+#include "LightProgram.h"
+#include "PumpkinChase.h"
+#include "SpookySlow.h"
 
 class HalloweenProgramGroup : public LightProgramGroup {
  public:

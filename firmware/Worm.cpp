@@ -8,7 +8,7 @@
   See README for complete attributions.
 */
 
-#include <Worm.h>
+#include "Worm.h"
 
 Worm::Worm() : head_(0), tail_(0), speed_(0), head_dir_(0), tail_dir_(0),
                is_stretching_(true), color_(G35::max_color(rand())) {

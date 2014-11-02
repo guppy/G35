@@ -8,7 +8,7 @@
   See README for complete attributions.
 */
 
-#include <Eyes.h>
+#include "Eyes.h"
 
 Eyes::Eyes(G35& g35) : LightProgram(g35), count_(0), next_eye_(0) {
   g35_.fill_color(0, light_count_, 255, COLOR_BLACK);

@@ -11,8 +11,8 @@
 #ifndef INCLUDE_G35_PROGRAMS_CREEPERS_H
 #define INCLUDE_G35_PROGRAMS_CREEPERS_H
 
-#include <LightProgram.h>
-#include <Worm.h>
+#include "LightProgram.h"
+#include "Worm.h"
 
 // Inchworm with Halloween colors. :|
 class Creepers : public LightProgram {

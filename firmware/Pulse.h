@@ -11,7 +11,7 @@
 #ifndef INCLUDE_G35_PROGRAMS_PULSE_H
 #define INCLUDE_G35_PROGRAMS_PULSE_H
 
-#include <LightProgram.h>
+#include "LightProgram.h"
 
 class Pulse : public LightProgram {
  public:

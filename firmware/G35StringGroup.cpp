@@ -7,7 +7,7 @@
   README for complete attributions.
 */
 
-#include <G35StringGroup.h>
+#include "G35StringGroup.h"
 
 G35StringGroup::G35StringGroup()
 : string_count_(0) {

@@ -11,7 +11,7 @@
   loop protocol code that seems to work very well!
 */
 
-#include <G35.h>
+#include "G35.h"
 
 G35::G35() : light_count_(0) {
 }

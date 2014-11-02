@@ -11,7 +11,7 @@
 #ifndef INCLUDE_G35_STOCK_PROGRAMS_H
 #define INCLUDE_G35_STOCK_PROGRAMS_H
 
-#include <LightProgram.h>
+#include "LightProgram.h"
 
 // We don't count SteadyWhite because it's more of a mode than a program.
 #define STOCK_PROGRAM_COUNT (12)

@@ -11,15 +11,15 @@
 #ifndef INCLUDE_G35_PLUS_PROGRAMS_H
 #define INCLUDE_G35_PLUS_PROGRAMS_H
 
-#include <LightProgram.h>
-#include <Meteorite.h>
-#include <Twinkle.h>
-#include <RedGreenChase.h>
-#include <Pulse.h>
-#include <Orbit.h>
-#include <Cylon.h>
-#include <Stereo.h>
-#include <Inchworm.h>
+#include "LightProgram.h"
+#include "Meteorite.h"
+#include "Twinkle.h"
+#include "RedGreenChase.h"
+#include "Pulse.h"
+#include "Orbit.h"
+#include "Cylon.h"
+#include "Stereo.h"
+#include "Inchworm.h"
 
 class PlusProgramGroup : public LightProgramGroup {
  public:

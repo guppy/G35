@@ -11,7 +11,7 @@
 #ifndef INCLUDE_G35_PROGRAM_RUNNER_H
 #define INCLUDE_G35_PROGRAM_RUNNER_H
 
-#include <LightProgram.h>
+#include "LightProgram.h"
 
 // ProgramRunner manages a collection of LightPrograms.
 //
