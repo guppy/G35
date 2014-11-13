@@ -22,7 +22,7 @@ G35StringRemote::G35StringRemote(uint8_t pin, uint8_t light_count,
   port_	= port;
   strncpy(ip_, ip, sizeof(ip_));
   //ip_[sizeof(ip_) - 1] = '\0';
-  client_.begin(8888);
+  client_.begin(port_);
 }
 
 G35StringRemote::G35StringRemote(uint8_t pin, uint8_t light_count, char ip[], int port)
@@ -32,7 +32,8 @@ G35StringRemote::G35StringRemote(uint8_t pin, uint8_t light_count, char ip[], in
   port_	= port;
   strncpy(ip_, ip, sizeof(ip_));
   //ip_[sizeof(ip_) - 1] = '\0';
-  client_.begin(8888);
+  client_.begin(port_);
+  Serial.println(ip_);
 }
 
 void G35StringRemote::set_color(uint8_t bulb, uint8_t intensity, color_t color) {
@@ -45,10 +46,11 @@ void G35StringRemote::set_color(uint8_t bulb, uint8_t intensity, color_t color) 
   char fmt[14];
   sprintf(fmt, "S%02d%03d%03d%04d", pin_, bulb, intensity, color);
   fmt[sizeof(fmt) - 1] = '\0';
- 
-  client_.beginPacket("192.168.79.95", 8888);
+  Serial.println("Sending udp packet"); 
+  client_.beginPacket(ip_, port_);
   client_.write(fmt);
   client_.endPacket();
+  Serial.println("Sent packet");
 }
 
 void G35StringRemote::enumerate() {
