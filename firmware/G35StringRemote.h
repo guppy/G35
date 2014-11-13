@@ -54,6 +54,7 @@ class G35StringRemote : public G35 {
   bool is_forward_;
   char ip_[16];
   int port_;
+  Udp client_;
 
   enum {
     MAX_INTENSITY = 0xcc,

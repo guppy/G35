@@ -19,7 +19,7 @@ G35StringRemote::G35StringRemote(uint8_t pin, uint8_t light_count,
 : G35(), pin_(pin), physical_light_count_(physical_light_count),
   bulb_zero_(bulb_zero), is_forward_(is_forward) {
   light_count_ = light_count;
-  strncpy(ip_, ip, sizeof(ip_);
+  strncpy(ip_, ip, sizeof(ip_));
   ip_[sizeof(ip_) - 1] = '\0';
   client_.begin();
 }
@@ -28,7 +28,7 @@ G35StringRemote::G35StringRemote(uint8_t pin, uint8_t light_count, char ip[], in
 : G35(), pin_(pin), physical_light_count_(light_count),
   bulb_zero_(0), is_forward_(true) {
   light_count_ = light_count;
-  strncpy(ip_, ip, sizeof(ip_);
+  strncpy(ip_, ip, sizeof(ip_));
   ip_[sizeof(ip_) - 1] = '\0';
   client_.begin();
 }
