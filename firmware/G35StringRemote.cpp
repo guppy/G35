@@ -13,7 +13,7 @@
 
 #include "G35StringRemote.h"
 
-G35String::G35String(uint8_t pin, uint8_t light_count,
+G35StringRemote::G35StringRemote(uint8_t pin, uint8_t light_count,
                      uint8_t physical_light_count,
                      uint8_t bulb_zero, bool is_forward, char ip[], int port)
 : G35(), pin_(pin), physical_light_count_(physical_light_count),
@@ -24,7 +24,7 @@ G35String::G35String(uint8_t pin, uint8_t light_count,
   client_.begin();
 }
 
-G35String::G35String(uint8_t pin, uint8_t light_count, char ip[], int port)
+G35StringRemote::G35StringRemote(uint8_t pin, uint8_t light_count, char ip[], int port)
 : G35(), pin_(pin), physical_light_count_(light_count),
   bulb_zero_(0), is_forward_(true) {
   light_count_ = light_count;
@@ -33,7 +33,7 @@ G35String::G35String(uint8_t pin, uint8_t light_count, char ip[], int port)
   client_.begin();
 }
 
-void G35String::set_color(uint8_t bulb, uint8_t intensity, color_t color) {
+void G35StringRemote::set_color(uint8_t bulb, uint8_t intensity, color_t color) {
   bulb += bulb_zero_;
 
   if (intensity > MAX_INTENSITY) {
@@ -49,11 +49,11 @@ void G35String::set_color(uint8_t bulb, uint8_t intensity, color_t color) {
   client_.endPacket();
 }
 
-void G35String::enumerate() {
+void G35StringRemote::enumerate() {
   enumerate(is_forward_);
 }
 
-void G35String::enumerate(bool forward) {
+void G35StringRemote::enumerate(bool forward) {
   uint8_t count = physical_light_count_;
   uint8_t bulb = forward ? 0 : light_count_ - 1;
   int8_t delta = forward ? 1 : -1;
@@ -63,15 +63,15 @@ void G35String::enumerate(bool forward) {
   }
 }
 
-void G35String::enumerate_forward() {
+void G35StringRemote::enumerate_forward() {
   enumerate(true);
 }
 
-void G35String::enumerate_reverse() {
+void G35StringRemote::enumerate_reverse() {
   enumerate(false);
 }
 
-void G35String::do_test_patterns() {
+void G35StringRemote::do_test_patterns() {
   const uint8_t last_light = light_count_ - 1;
 
   // Cycle through primaries.

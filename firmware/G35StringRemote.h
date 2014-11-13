@@ -29,9 +29,9 @@ class G35StringRemote : public G35 {
   // |physical_light_count|: the number of physical bulbs on the string.
   // |bulb_zero|: the index of the first bulb (almost always zero).
   // |is_forward|: true if the closest bulb to the plug has the lowest index.
-  G35String(uint8_t pin, uint8_t light_count, uint8_t physical_light_count,
+  G35StringRemote(uint8_t pin, uint8_t light_count, uint8_t physical_light_count,
             uint8_t bulb_zero, bool is_forward, char ip[], int port);
-  G35String(uint8_t pin, uint8_t light_count, char ip[], int port);
+  G35StringRemote(uint8_t pin, uint8_t light_count, char ip[], int port);
 
   // Implementation of G35 interface.
   virtual uint16_t get_light_count() { return light_count_; }
