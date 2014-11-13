@@ -21,7 +21,7 @@ G35StringRemote::G35StringRemote(uint8_t pin, uint8_t light_count,
   light_count_ = light_count;
   strncpy(ip_, ip, sizeof(ip_));
   ip_[sizeof(ip_) - 1] = '\0';
-  client_.begin(_port);
+  client_.begin(port_);
 }
 
 G35StringRemote::G35StringRemote(uint8_t pin, uint8_t light_count, char ip[], int port)
@@ -30,7 +30,7 @@ G35StringRemote::G35StringRemote(uint8_t pin, uint8_t light_count, char ip[], in
   light_count_ = light_count;
   strncpy(ip_, ip, sizeof(ip_));
   ip_[sizeof(ip_) - 1] = '\0';
-  client_.begin(_port);
+  client_.begin(port_);
 }
 
 void G35StringRemote::set_color(uint8_t bulb, uint8_t intensity, color_t color) {
