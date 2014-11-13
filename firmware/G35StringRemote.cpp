@@ -21,7 +21,7 @@ G35StringRemote::G35StringRemote(uint8_t pin, uint8_t light_count,
   light_count_ = light_count;
   strncpy(ip_, ip, sizeof(ip_));
   ip_[sizeof(ip_) - 1] = '\0';
-  client_.begin();
+  client_.begin(_port);
 }
 
 G35StringRemote::G35StringRemote(uint8_t pin, uint8_t light_count, char ip[], int port)
