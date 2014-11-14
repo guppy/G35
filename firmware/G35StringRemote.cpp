@@ -20,7 +20,6 @@ G35StringRemote::G35StringRemote(uint8_t pin, uint8_t light_count,
   bulb_zero_(bulb_zero), is_forward_(is_forward) {
   light_count_ = light_count;
   port_	= port;
-  ip_ = {192, 168, 79, 95};
   client_.begin(port_);
 }
 
@@ -29,7 +28,6 @@ G35StringRemote::G35StringRemote(uint8_t pin, uint8_t light_count, char ip[], in
   bulb_zero_(0), is_forward_(true) {
   light_count_ = light_count;
   port_	= port;
-  ip_ = {192, 168, 79, 95};
   client_.begin(port_);
 }
 
