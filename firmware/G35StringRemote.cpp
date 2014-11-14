@@ -15,29 +15,21 @@
 
 G35StringRemote::G35StringRemote(uint8_t pin, uint8_t light_count,
                      uint8_t physical_light_count,
-                     uint8_t bulb_zero, bool is_forward, byte ip[], int port)
+                     uint8_t bulb_zero, bool is_forward, char ip[], int port)
 : G35(), pin_(pin), physical_light_count_(physical_light_count),
   bulb_zero_(bulb_zero), is_forward_(is_forward) {
   light_count_ = light_count;
   port_	= port;
-
-  for (int i = 0; i < arraySize(ip); i++) {
-    ip_[i] = ip[i];
-  }
-
+  ip_ = {192, 168, 79, 95};
   client_.begin(port_);
 }
 
-G35StringRemote::G35StringRemote(uint8_t pin, uint8_t light_count, byte ip[], int port)
+G35StringRemote::G35StringRemote(uint8_t pin, uint8_t light_count, char ip[], int port)
 : G35(), pin_(pin), physical_light_count_(light_count),
   bulb_zero_(0), is_forward_(true) {
   light_count_ = light_count;
   port_	= port;
-
-  for (int i = 0; i < arraySize(ip); i++) {
-    ip_[i] = ip[i];
-  }
-
+  ip_ = {192, 168, 79, 95};
   client_.begin(port_);
 }
 
