@@ -15,25 +15,30 @@
 
 G35StringRemote::G35StringRemote(uint8_t pin, uint8_t light_count,
                      uint8_t physical_light_count,
-                     uint8_t bulb_zero, bool is_forward, char ip[], int port)
+                     uint8_t bulb_zero, bool is_forward, byte ip[], int port)
 : G35(), pin_(pin), physical_light_count_(physical_light_count),
   bulb_zero_(bulb_zero), is_forward_(is_forward) {
   light_count_ = light_count;
   port_	= port;
-  strncpy(ip_, ip, sizeof(ip_));
-  //ip_[sizeof(ip_) - 1] = '\0';
+
+  for (int i = 0; i < arraySize(ip); i++) {
+    ip_[i] = ip[i];
+  }
+
   client_.begin(port_);
 }
 
-G35StringRemote::G35StringRemote(uint8_t pin, uint8_t light_count, char ip[], int port)
+G35StringRemote::G35StringRemote(uint8_t pin, uint8_t light_count, byte ip[], int port)
 : G35(), pin_(pin), physical_light_count_(light_count),
   bulb_zero_(0), is_forward_(true) {
   light_count_ = light_count;
   port_	= port;
-  strncpy(ip_, ip, sizeof(ip_));
-  //ip_[sizeof(ip_) - 1] = '\0';
+
+  for (int i = 0; i < arraySize(ip); i++) {
+    ip_[i] = ip[i];
+  }
+
   client_.begin(port_);
-  Serial.println(ip_);
 }
 
 void G35StringRemote::set_color(uint8_t bulb, uint8_t intensity, color_t color) {
@@ -46,11 +51,9 @@ void G35StringRemote::set_color(uint8_t bulb, uint8_t intensity, color_t color) 
   char fmt[14];
   sprintf(fmt, "S%02d%03d%03d%04d", pin_, bulb, intensity, color);
   fmt[sizeof(fmt) - 1] = '\0';
-  Serial.println("Sending udp packet"); 
   client_.beginPacket(ip_, port_);
   client_.write(fmt);
   client_.endPacket();
-  Serial.println("Sent packet");
 }
 
 void G35StringRemote::enumerate() {

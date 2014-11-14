@@ -52,7 +52,7 @@ class G35StringRemote : public G35 {
   uint8_t physical_light_count_;
   uint8_t bulb_zero_;
   bool is_forward_;
-  char ip_[16];
+  byte ip_[4];
   int port_;
   UDP client_;
 
