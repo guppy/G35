@@ -20,7 +20,7 @@ G35StringRemote::G35StringRemote(uint8_t pin, uint8_t light_count,
   bulb_zero_(bulb_zero), is_forward_(is_forward) {
   light_count_ = light_count;
   port_	= port;
-  client_.begin(8888);
+  //client_.begin(8888);
 }
 
 G35StringRemote::G35StringRemote(uint8_t pin, uint8_t light_count, char ip[], int port)
@@ -28,7 +28,7 @@ G35StringRemote::G35StringRemote(uint8_t pin, uint8_t light_count, char ip[], in
   bulb_zero_(0), is_forward_(true) {
   light_count_ = light_count;
   port_	= port;
-  client_.begin(8888);
+  //client_.begin(8888);
 }
 
 void G35StringRemote::set_color(uint8_t bulb, uint8_t intensity, color_t color) {
@@ -38,6 +38,7 @@ void G35StringRemote::set_color(uint8_t bulb, uint8_t intensity, color_t color) 
     intensity = MAX_INTENSITY;
   }
 
+  client_.begin(8888);
   char fmt[14];
   sprintf(fmt, "S%02d%03d%03d%04d", pin_, bulb, intensity, color);
   client_.beginPacket(IPAddress(192,168,79,95), 8888);
