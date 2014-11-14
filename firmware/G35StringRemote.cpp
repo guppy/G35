@@ -40,8 +40,7 @@ void G35StringRemote::set_color(uint8_t bulb, uint8_t intensity, color_t color) 
 
   char fmt[14];
   sprintf(fmt, "S%02d%03d%03d%04d", pin_, bulb, intensity, color);
-  fmt[sizeof(fmt) - 1] = '\0';
-  client_.beginPacket(ip_, port_);
+  client_.beginPacket(IPAddress(192,168,79,95), port_);
   client_.write(fmt);
   client_.endPacket();
 }
